@@ -1,0 +1,41 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+alembic='*'
+aniso8601='*'
+attrs='*'
+blinker='*'
+click='*'
+Faker='*'
+flasgger='*'
+Flask='*'
+Flask-Migrate='*'
+Flask-RESTful='*'
+Flask-SQLAlchemy='*'
+flask-swagger-ui='*'
+greenlet='*'
+gunicorn='*'
+itsdangerous='*'
+Jinja2='*'
+jsonschema='*'
+jsonschema-specifications='*'
+Mako='*'
+MarkupSafe='*'
+mistune='*'
+packaging='*'
+python-dateutil='*'
+pytz='*'
+PyYAML='*'
+referencing='*'
+six='*'
+SQLAlchemy='*'
+typing_extensions='*'
+Werkzeug='*'
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
