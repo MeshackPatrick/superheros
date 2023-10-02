@@ -18,8 +18,9 @@ class Power(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False)
     description = db.Column(db.String(200), nullable=False)
-    heroes = db.relationship('Hero', secondary='hero_power')
 
+    #heroes = db.relationship('Hero', secondary='hero_power')
+    heroes = db.relationship('Hero', secondary='hero_power', overlaps="powers")
     @validates('description')
     def validate_description(self,key,value):
         if len(value) < 20:
